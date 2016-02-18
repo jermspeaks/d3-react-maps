@@ -8,7 +8,8 @@
     "lint": "eslint src --cache",
     "precommit": "npm run lint",
     "prepush": "npm run lint && npm test -- --reporter dot",
-    "postversion": "git push --follow-tags"
+    "postversion": "git push --follow-tags",
+    "start": "NODE_ENV=development webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -28,12 +29,16 @@
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-eslint": "^5.0.0",
+    "babel-loader": "^6.2.3",
     "babel-preset-es2015": "^6.5.0",
     "eslint": "^2.1.0",
+    "eslint-loader": "^1.3.0",
     "eslint-plugin-react": "^3.16.1",
     "expect": "^1.14.0",
+    "html-webpack-plugin": "^2.9.0",
     "husky": "^0.11.1",
     "mocha": "^2.4.5",
+    "path": "^0.12.7",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
   }
