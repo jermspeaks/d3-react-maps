@@ -1,5 +1,7 @@
-export function test(num) {
-  return num;
+export function square(num) {
+  return Math.pow(num, 2);
 }
 
-module.export = test;
+export function cubed(num) {
+  return Math.pow(num, 3);
+}
