@@ -1,13 +1,14 @@
 {
   "name": "d3-react-maps",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "d3 with react for maps",
   "main": "index.js",
   "scripts": {
     "test": "NODE_ENV=test mocha \"test\" --compilers js:babel-register --recursive",
     "lint": "eslint src --cache",
     "precommit": "npm run lint",
-    "prepush": "npm run lint && npm test -- --reporter dot"
+    "prepush": "npm run lint && npm test -- --reporter dot",
+    "postversion": "git push --follow-tags"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,8 @@
     "eslint-plugin-react": "^3.16.1",
     "expect": "^1.14.0",
     "husky": "^0.11.1",
-    "mocha": "^2.4.5"
+    "mocha": "^2.4.5",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
   }
 }
