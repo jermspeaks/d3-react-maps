@@ -4,7 +4,10 @@
   "description": "d3 with react for maps",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "NODE_ENV=test mocha \"test\" --compilers js:babel-register --recursive",
+    "lint": "eslint src --cache",
+    "precommit": "npm run lint",
+    "prepush": "npm run lint && npm test -- --reporter dot"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,13 @@
   },
   "homepage": "https://github.com/jermspeaks/d3-react-maps#readme",
   "devDependencies": {
-    "husky": "^0.11.1"
+    "babel": "^6.5.2",
+    "babel-eslint": "^5.0.0",
+    "babel-preset-es2015": "^6.5.0",
+    "eslint": "^2.1.0",
+    "eslint-plugin-react": "^3.16.1",
+    "expect": "^1.14.0",
+    "husky": "^0.11.1",
+    "mocha": "^2.4.5"
   }
 }
