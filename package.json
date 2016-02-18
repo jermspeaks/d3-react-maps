@@ -1,0 +1,27 @@
+{
+  "name": "d3-react-maps",
+  "version": "1.0.0",
+  "description": "d3 with react for maps",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jermspeaks/d3-react-maps.git"
+  },
+  "keywords": [
+    "d3",
+    "react",
+    "maps"
+  ],
+  "author": "Jeremy Wong <jermspeaks@gmail.com> (http://craftbyzen.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jermspeaks/d3-react-maps/issues"
+  },
+  "homepage": "https://github.com/jermspeaks/d3-react-maps#readme",
+  "devDependencies": {
+    "husky": "^0.11.1"
+  }
+}
